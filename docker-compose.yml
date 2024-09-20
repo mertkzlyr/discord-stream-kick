@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  discord-bot:
+    build: .
+    restart: unless-stopped
+    # No env_file or environment section since the token is hard-coded
